@@ -2,7 +2,7 @@
 * HTML
 
 ## Javascript - CDN with local fallbacks where available
-* Modernizr (including HTML5shiv
+* Modernizr (including HTML5shiv)
 * jQuery
 * Respond.js for old IE
 * plugins.js for local dev
