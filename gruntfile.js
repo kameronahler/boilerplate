@@ -8,16 +8,30 @@ module.exports = function(grunt) {
         sass: {
             dev:{
                 options: {
-                    style: 'expanded',
-                    lineNumbers: true,
-                    trace: true
+                    lineNumbers: false,
+                    trace: true,
+                    sourcemap: 'inline'
                 },
                 files: [{
                     expand: true,
                     cwd: 'src/scss',
                     src: ['*.scss'],
                     dest: 'css',
-                    ext: '.min.css'
+                    ext: '.min.css',
+                }]
+            },
+            build:{
+                options: {
+                    lineNumbers: false,
+                    trace: true,
+                    sourcemap: 'none'
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'src/scss',
+                    src: ['*.scss'],
+                    dest: 'css',
+                    ext: '.min.css',
                 }]
             }
         },
@@ -31,14 +45,12 @@ module.exports = function(grunt) {
                         require('autoprefixer')({
                             browsers: ['last 4 versions', '> 1% in US']
                         }),
-                        require('pixrem')({
-                            rootValue: '16px'
-                        }),
                         require('css-mqpacker')({
                             expand: true,
                             cwd: 'src/css/',
                             src: '*.css',
                             dest: 'dest/css/'
+                            //sort:true
                         }),
                         require('cssnano')({
                             calc: false,
@@ -51,11 +63,47 @@ module.exports = function(grunt) {
                             minifySelectors: false,
                             minifyFontValues: false,
                             normalizeUrl: false,
-                            safe: true
+                            safe: true,
+                            mergeRules:true,
+                            core:false
                         })
                     ]
                 },
-
+                src: 'css/*.css'
+            },
+            build: {
+                options: {
+                    map:false,
+                    processors: [
+                        require('autoprefixer')({
+                            browsers: ['last 4 versions', '> 1% in US']
+                        }),
+                        require('pixrem')({
+                            rootValue: '16px'
+                        }),
+                        require('css-mqpacker')({
+                            expand: true,
+                            cwd: 'src/css/',
+                            src: '*.css',
+                            dest: 'dest/css/',
+                            //sort:true
+                        }),
+                        require('cssnano')({
+                            calc: false,
+                            colorMin: false,
+                            convertValues: false,
+                            discardUnused: false,
+                            zindex: false,
+                            reduceIdents: false,
+                            mergeIdents: false,
+                            minifySelectors: false,
+                            minifyFontValues: false,
+                            normalizeUrl: false,
+                            safe: true,
+                            mergeRules:true,
+                        })
+                    ]
+                },
                 src: 'css/*.css'
             }
         },
@@ -69,13 +117,13 @@ module.exports = function(grunt) {
                     preserveComments: 'all'
                 },
                 src: 'src/js/*.js',
-                dest: 'js/main.js'
-            },
-            build: {
-                src: 'src/js/*.js',
                 dest: 'js/main.min.js',
                 sourceMap: true,
                 sourceMapIncludeSources: true
+            },
+            build: {
+                src: 'src/js/*.js',
+                dest: 'js/main.min.js'
             }
         },
 
@@ -104,7 +152,7 @@ module.exports = function(grunt) {
             },
             scripts: {
                 files: 'src/js/**/*.js',
-                tasks: ['jshint', 'uglify:dev', 'notify:scripts'],
+                tasks: ['uglify:dev', 'notify:scripts'],
                 options: {
                     livereload: true
                 }
@@ -131,14 +179,14 @@ module.exports = function(grunt) {
 
     // Register tasks
     grunt.registerTask('default', [
-        'sass',
-        'postcss',
+        'sass:dev',
+        'postcss:dev',
         'uglify:dev'
     ]);
 
     grunt.registerTask('build', [
-        'sass',
-        'postcss',
+        'sass:build',
+        'postcss:build',
         'uglify:build'
     ]);
 };

@@ -1,8 +1,12 @@
 
+// Normalize
 @import "partials/normalize/normalize";
-@import "partials/boilerplate/helpers";
-/*! Vertical Rhythm */
+
+// Boilerplate Helpers
+// @import "partials/boilerplate/helpers";
+
+// Vertical Rhythm */
 @import "partials/vertical-rhythm/vertical-rhythm";
-/*! Boilerplate Print Styles */
-//last
+
+// Boilerplate Print Styles -- LAST
 @import "partials/boilerplate/print";
