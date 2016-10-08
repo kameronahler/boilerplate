@@ -1,7 +1,8 @@
 /*
-npm install --save-dev grunt grunt-postcss cssnano pixrem autoprefixer css-mqpacker grunt-contrib-sass grunt-contrib-uglify grunt-contrib-watch grunt-notify
+npm install --save-dev grunt time-grunt grunt-postcss cssnano pixrem autoprefixer css-mqpacker grunt-contrib-sass grunt-sass grunt-contrib-uglify grunt-contrib-watch grunt-notify
 */
 module.exports = function(grunt) {
+    require('time-grunt')(grunt);
     grunt.initConfig({
 
         // Sass
@@ -17,7 +18,7 @@ module.exports = function(grunt) {
                     cwd: 'src/scss',
                     src: ['*.scss'],
                     dest: 'css',
-                    ext: '.min.css',
+                    ext: '.min.css'
                 }]
             },
             build:{
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
                     cwd: 'src/scss',
                     src: ['*.scss'],
                     dest: 'css',
-                    ext: '.min.css',
+                    ext: '.min.css'
                 }]
             }
         },
@@ -43,14 +44,14 @@ module.exports = function(grunt) {
                     map:true,
                     processors: [
                         require('autoprefixer')({
-                            browsers: ['last 4 versions', '> 1% in US']
+                            browsers: ['last 4 versions', '> .5% in US']
                         }),
                         require('css-mqpacker')({
                             expand: true,
                             cwd: 'src/css/',
                             src: '*.css',
-                            dest: 'dest/css/'
-                            //sort:true
+                            dest: 'dest/css/',
+                            sort:true
                         }),
                         require('cssnano')({
                             calc: false,
@@ -76,7 +77,7 @@ module.exports = function(grunt) {
                     map:false,
                     processors: [
                         require('autoprefixer')({
-                            browsers: ['last 4 versions', '> 1% in US']
+                            browsers: ['last 4 versions', '> .5% in US']
                         }),
                         require('pixrem')({
                             rootValue: '16px'
@@ -86,7 +87,7 @@ module.exports = function(grunt) {
                             cwd: 'src/css/',
                             src: '*.css',
                             dest: 'dest/css/',
-                            //sort:true
+                            sort:true
                         }),
                         require('cssnano')({
                             calc: false,
@@ -100,7 +101,7 @@ module.exports = function(grunt) {
                             minifyFontValues: false,
                             normalizeUrl: false,
                             safe: true,
-                            mergeRules:true,
+                            mergeRules:true
                         })
                     ]
                 },
@@ -129,14 +130,16 @@ module.exports = function(grunt) {
 
         // Notify
         notify: {
-            styles: {
+            sass: {
                 options: {
-                    message: 'CSS finished',
+                    title: 'Sass',
+                    message: 'Compiled'
                 }
             },
-            scripts: {
+            js: {
                 options: {
-                    message: 'JS finished',
+                    title: 'Javascript',
+                    message: 'Compiled'
                 }
             }
         },
@@ -145,14 +148,14 @@ module.exports = function(grunt) {
         watch: {
             styles: {
                 files: 'src/scss/**/*.scss',
-                tasks: ['sass:dev', 'postcss:dev', 'notify:styles'],
+                tasks: ['sass:dev', 'postcss:dev', 'notify:sass'],
                 options: {
                     livereload: true
                 }
             },
             scripts: {
                 files: 'src/js/**/*.js',
-                tasks: ['uglify:dev', 'notify:scripts'],
+                tasks: ['uglify:dev', 'notify:js'],
                 options: {
                     livereload: true
                 }
@@ -172,6 +175,7 @@ module.exports = function(grunt) {
 
     // Load plugins
     grunt.loadNpmTasks('grunt-contrib-sass');
+    //grunt.loadNpmTasks('grunt-sass'); //libsass
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
