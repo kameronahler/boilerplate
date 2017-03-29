@@ -1,5 +1,5 @@
 /*
-npm install --save-dev grunt time-grunt grunt-postcss cssnano pixrem autoprefixer css-mqpacker grunt-contrib-sass grunt-sass grunt-contrib-uglify grunt-contrib-watch grunt-notify
+npm install --save-dev grunt time-grunt grunt-postcss cssnano pixrem autoprefixer grunt-sass grunt-contrib-uglify grunt-contrib-watch grunt-notify
 */
 module.exports = function(grunt) {
     require('time-grunt')(grunt);
@@ -46,13 +46,6 @@ module.exports = function(grunt) {
                         require('autoprefixer')({
                             browsers: ['last 4 versions', '> .5% in US']
                         }),
-                        require('css-mqpacker')({
-                            expand: true,
-                            cwd: 'src/css/',
-                            src: '*.css',
-                            dest: 'dest/css/',
-                            sort:true
-                        }),
                         require('cssnano')({
                             calc: false,
                             colorMin: false,
@@ -81,13 +74,6 @@ module.exports = function(grunt) {
                         }),
                         require('pixrem')({
                             rootValue: '16px'
-                        }),
-                        require('css-mqpacker')({
-                            expand: true,
-                            cwd: 'src/css/',
-                            src: '*.css',
-                            dest: 'dest/css/',
-                            sort:true
                         }),
                         require('cssnano')({
                             calc: false,
@@ -174,8 +160,7 @@ module.exports = function(grunt) {
     });
 
     // Load plugins
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    //grunt.loadNpmTasks('grunt-sass'); //libsass
+    grunt.loadNpmTasks('grunt-sass'); //libsass
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');

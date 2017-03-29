@@ -1,0 +1,688 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"percentage\tpercentage()"
+			],
+			[
+				"setTi",
+				"setTimeout(func, delay)\tWindow"
+			],
+			[
+				"searc",
+				"search\tURLUtils"
+			],
+			[
+				"chan",
+				"change\tEvent"
+			],
+			[
+				"checkBox",
+				"checkBoxEventHandler"
+			],
+			[
+				"line",
+				"line_comments"
+			],
+			[
+				"phase",
+				"phase-1"
+			],
+			[
+				"colorprese",
+				"colorPresentTop"
+			],
+			[
+				"colorbottom",
+				"colorbottomPastGraphicHover"
+			],
+			[
+				"colorpast",
+				"colorbottomPastBlueHover"
+			],
+			[
+				"colorbottpa",
+				"colorbottomPastBlueHover"
+			],
+			[
+				"colorho",
+				"colortopGraphicHover"
+			],
+			[
+				"phase1",
+				"phase1topGraphic"
+			],
+			[
+				"colortopgraphic",
+				"colorbottomPastGraphicHover"
+			],
+			[
+				"colortopGraphic",
+				"colortopGraphicHover"
+			],
+			[
+				"color",
+				"colortopGraphic"
+			],
+			[
+				"growthGroup",
+				"growthGroupActive"
+			],
+			[
+				"border-top",
+				"border-top-color"
+			],
+			[
+				"competitivenessG",
+				"competitivenessGroupInactive"
+			],
+			[
+				"group",
+				"livabilityGroupInactive"
+			],
+			[
+				"susta",
+				"sustainabilityGroupInactive"
+			],
+			[
+				"equit",
+				"equityGroupInactive"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 307.0,
+		"last_filter": "color",
+		"selected_items":
+		[
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"colorsub",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"diff",
+				"Diffy Compare"
+			],
+			[
+				"diffy",
+				"Diffy Cleanup"
+			],
+			[
+				"package insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"auto",
+				"Autoprefix CSS"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Gruntfile"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"cssl",
+				"CSSLint: Run CSSLint"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"proje",
+				"Project Manager"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"at",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"clean",
+				"CleanCSS: Clean current file"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"emme",
+				"Emmet: Go to Matching Pair"
+			],
+			[
+				"emmet",
+				"Emmet: Wrap With Abbreviation"
+			],
+			[
+				"sass",
+				"SassBeautify"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/kameronahler/Google Drive/Github/_Boilerplate",
+		"/Users/kameronahler/Google Drive/Github/_Boilerplate/src",
+		"/Users/kameronahler/Google Drive/Github/_Boilerplate/src/scss",
+		"/Users/kameronahler/Google Drive/Github/_Boilerplate/src/scss/partials"
+	],
+	"file_history":
+	[
+		"/Users/kameronahler/Google Drive/Github/test/gruntfile.js",
+		"/Users/kameronahler/Google Drive/Github/test/css/main.min.css",
+		"/Users/kameronahler/odrive/UIS/Kameron/_UIS_Minify/in",
+		"/Users/kameronahler/Google Drive/Dev/Project Madison Comp/css/main.min.css",
+		"/Users/kameronahler/Google Drive/Dev/Project Madison Comp/src/scss/main.scss",
+		"/Users/kameronahler/Google Drive/Dev/Project Madison Comp/gruntfile.js",
+		"/Users/kameronahler/Google Drive/Dev/Project Madison Comp/html-backup.html",
+		"/Users/kameronahler/Google Drive/Dev/Project DART/src/scss/main.scss",
+		"/Users/kameronahler/Downloads/Sketch-Notebook-master/README.md",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/backup/timeline.css",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/backup/home.html",
+		"/private/var/folders/t1/hk299w1n22ld5s4whl2dyk3r0000gn/T/TemporaryItems/SaveForWeb/BrowserPreview/BrowserPreview_tmp.html",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/backup/process svg.js",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/backup/staging/timeline.html",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/src/scss/workbook.scss",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/src/scss/home.scss",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/css/workbook.min.css",
+		"/Users/kameronahler/Google Drive/Dev/Project Madison RTP/backup/maps.html",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/css/home.min.css",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/backup/global.css",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/backup/home.css",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/backup/test.css",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/backup/node109.css",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/Stage 3/css/main.min.css",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/backup.css",
+		"/Users/kameronahler/Google Drive/Dev/Project Minneapolis/src/scss/main.scss",
+		"/Users/kameronahler/Google Drive/Github/test-svg-xlink/index.html",
+		"/Users/kameronahler/Google Drive/Dev/_SVG/_SVGO/out/symbol-defs.svg",
+		"/Users/kameronahler/Downloads/icomoon_20_icons/symbol-defs.svg",
+		"/Users/kameronahler/Google Drive/Dev/_SVG/_SVGO/gruntfile.js",
+		"/Users/kameronahler/Google Drive/Github/test-svg-xlink/img/test-svg-sprite.svg",
+		"/Users/kameronahler/Downloads/codepen_gwZAYG/index.html",
+		"/Users/kameronahler/Google Drive/Github/test-svg-xlink/css/style.css",
+		"/Users/kameronahler/Google Drive/Github/test-svg-xlink/css/cb800f4c113571b03aa411ed5.css",
+		"/Users/kameronahler/Downloads/codepen_gwZAYG/css/cb800f4c113571b03aa411ed5.css",
+		"/Users/kameronahler/Google Drive/Dev/_GruntIcon/gruntfile.js",
+		"/Users/kameronahler/Google Drive/Dev/_GruntIcon/out/icons.data.svg.css",
+		"/Users/kameronahler/Google Drive/Design/_Web/_Archive/Basic portfolio with flex/flexbox.html",
+		"/Users/kameronahler/Downloads/codepen_gwZAYG/config.rb",
+		"/Users/kameronahler/Downloads/codepen_gwZAYG/css/style.css",
+		"/Users/kameronahler/Downloads/codepen_gwZAYG/css/normalize.css",
+		"/Users/kameronahler/Google Drive/Dev/_GruntIcon/out/preview.html",
+		"/Users/kameronahler/Google Drive/Dev/_GruntIcon/out/icons.data.png.css",
+		"/Users/kameronahler/Google Drive/Dev/_GruntIcon/package.json",
+		"/Users/kameronahler/Downloads/grunticon/icons.data.svg.css",
+		"/Users/kameronahler/Downloads/icomoon_20_icons/SVG/chatbox.svg",
+		"/Users/kameronahler/Google Drive/Dev/_SVGO/gruntfile.js",
+		"/Users/kameronahler/Google Drive/Dev/_SVGO/test-svg-sprite.svg",
+		"/Users/kameronahler/Google Drive/Dev/_SVGO/out/environment.svg",
+		"/Users/kameronahler/Google Drive/Dev/_SVGO/in/environment.svg",
+		"/Users/kameronahler/Downloads/icomoon_20_icons/demo.html",
+		"/Users/kameronahler/Google Drive/Design/_svgo/IcoMoon Default Usable Fonts.json",
+		"/Users/kameronahler/Desktop/Project DART 2/gruntfile.js",
+		"/Users/kameronahler/Desktop/Project DART 2/src/scss/main.scss",
+		"/Users/kameronahler/Desktop/Project DART 2/package.json",
+		"/Users/kameronahler/Google Drive/Dev/_Boilerplate/gruntfile.js",
+		"/Users/kameronahler/Desktop/ajax-test3.html",
+		"/Users/kameronahler/Google Drive/Design/_SVGO/gruntfile.js",
+		"/Users/kameronahler/Google Drive/Design/_SVGO/in/environment.svg",
+		"/Users/kameronahler/Google Drive/Design/_SVGO/out/environment.svg",
+		"/Users/kameronahler/Google Drive/Dev/Project Madison RTP/src/scss/partials/_workbooks.scss",
+		"/Users/kameronahler/Google Drive/Dev/Project Madison RTP/src/scss/main.scss",
+		"/Users/kameronahler/Google Drive/Dev/Project Madison RTP/src/scss/partials/_bp3.scss",
+		"/Users/kameronahler/odrive/UIS/Kameron/Design/Project MATPB/Imagery/Plus.svg",
+		"/Users/kameronahler/odrive/UIS/Kameron/Design/Project MATPB/Imagery/Minus.svg",
+		"/Users/kameronahler/Google Drive/Dev/Project Madison RTP/src/html/budget-bar.html",
+		"/Users/kameronahler/Desktop/test/dist/wp-content/themes/test/index.php",
+		"/Users/kameronahler/Desktop/test/dist/wp-content/themes/test/template-parts/content-page.php",
+		"/Users/kameronahler/Desktop/test/gruntfile.js",
+		"/Users/kameronahler/Desktop/test/src/scss/main.scss",
+		"/Users/kameronahler/Desktop/test/src/scss/partials/_variables.scss",
+		"/Users/kameronahler/Desktop/test/dist/wp-content/themes/test/functions.php",
+		"/Users/kameronahler/Desktop/test/src/scss/partials/_resets.scss",
+		"/Users/kameronahler/Desktop/test/dist/wp-content/themes/test/css/main.min.css",
+		"/Users/kameronahler/Desktop/test/dist/wp-content/themes/test/css/ie.css",
+		"/Users/kameronahler/Google Drive/Design/_Boilerplate/gruntfile.js",
+		"/Users/kameronahler/Desktop/test/src/gruntfile.js",
+		"/Users/kameronahler/Desktop/test/css/main.min.css",
+		"/Users/kameronahler/Desktop/test/src/src/gruntfile.js",
+		"/Users/kameronahler/Desktop/test/dist/index.php",
+		"/Users/kameronahler/Downloads/Test (copy 01).html",
+		"/Users/kameronahler/Desktop/test/index.php",
+		"/Users/kameronahler/odrive/UIS/Kameron/Design/Project Minneapolis/1st Phase/Code Backups/home_timeline--curent.html",
+		"/Users/kameronahler/odrive/UIS/Kameron/Design/Project Minneapolis/1st Phase/Code Backups/timeline current.html",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/partials/icomoon/icomoon.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/partials/_modals.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/index-new.html",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/partials/_navbar.scss",
+		"/Users/kameronahler/Downloads/icomoon/demo.html",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/css/main.min.css",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/main.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/partials/_base.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/partials/icomoon/style.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/partials/icomoon/variables.scss",
+		"/Users/kameronahler/Downloads/icomoon/style.css",
+		"/Users/kameronahler/Downloads/icomoon/style.scss",
+		"/Users/kameronahler/Downloads/icomoon/variables.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/gruntfile.js",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/partials/_jumbotron.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/partials/_footer.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/partials/_cta-mobile-inpage.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/partials/jquery-modal/_jquery-modal.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/index.html",
+		"/Users/kameronahler/odrive/UIS/Kameron/_UIS_Git/brightpages/src/scss/main.scss",
+		"/Users/kameronahler/odrive/UIS/Kameron/_UIS_Git/brightpages/src/test/test.scss",
+		"/Users/kameronahler/odrive/UIS/Kameron/_UIS_Git/brightpages/src/test/partials/_01-base.scss",
+		"/Users/kameronahler/Downloads/untitled folder/Irrawaddy Dolphins and Dusty Ban Lung _ Travel Blog.html",
+		"/Users/kameronahler/Downloads/profile.html",
+		"/Users/kameronahler/odrive/UIS/Kameron/_scratchpad_UIS/UIS_main.css",
+		"/Users/kameronahler/odrive/UIS/Kameron/_scratchpad_UIS/UIS_scratchpad.html",
+		"/Users/kameronahler/odrive/UIS/Kameron/Design/Project Minneapolis/1st Phase/SVG/Process New Phase 2 Section.svg",
+		"/Users/kameronahler/odrive/UIS/Kameron/Design/Project Minneapolis/1st Phase/Code Backups/home_timeline current.html",
+		"/Users/kameronahler/odrive/UIS/Kameron/Design/Project Minneapolis/1st Phase/Code Backups/home.html",
+		"/Users/kameronahler/odrive/UIS/Kameron/Design/Project Minneapolis/1st Phase/Code Backups/home_timeline.html",
+		"/Users/kameronahler/odrive/UIS/Kameron/_UIS_Git/brightpages/css/main.css",
+		"/Users/kameronahler/odrive/UIS/Kameron/_UIS_Git/brightpages/src/scss/partials/_05-theme.scss",
+		"/Users/kameronahler/odrive/UIS/Kameron/_UIS_Git/brightpages/src/scss/partials/_04-state.scss",
+		"/Users/kameronahler/odrive/UIS/Kameron/_UIS_Git/brightpages/src/scss/partials/_03-modules.scss",
+		"/Users/kameronahler/odrive/UIS/Kameron/_UIS_Git/brightpages/src/scss/partials/_02-layout.scss",
+		"/Users/kameronahler/odrive/UIS/Kameron/_UIS_Git/brightpages/src/scss/partials/_01-base.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss/partials/_mobile-secondary-nav.scss",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/js/99-main.js",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/js/02-jquery-modal.js",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/.htaccess",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/comingsoon.html",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/coming-soon.html",
+		"/Users/kameronahler/.gitconfig",
+		"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/cname"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/kameronahler/Desktop/test/dist",
+			"/Users/kameronahler/Google Drive/Design/kameronahler.github.io/Site/src/scss",
+			"/Users/kameronahler/Desktop/efowel/wp-content/themes/FAS-THEME/assets/application/scss/skin/components",
+			"/Users/kameronahler/Desktop/efowel/wp-content/themes/FAS-THEME/assets/application",
+			"/Users/kameronahler/Desktop/efowel/wp-content/themes/FAS-THEME/assets/application/scss/skin",
+			"/Users/kameronahler/Desktop/efowel/wp-content/themes/FAS-THEME/assets/application/scss/skin/components"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"hyphen",
+			"content",
+			"background-",
+			"#form",
+			"_",
+			"nav-i",
+			"custom",
+			"aria-hidden=\"true\"",
+			"n\"",
+			"<img src=\"http://unsplash.it/100/100?image=125\">",
+			"legend",
+			" ",
+			"intro",
+			"box-shadow",
+			"button",
+			"box-shadow",
+			"www.",
+			"affordability",
+			"options",
+			"population",
+			"housing",
+			"Housing",
+			"housing",
+			"Housing",
+			"housing",
+			"unemployment",
+			"jobs",
+			"Jobs",
+			"jobs",
+			"Jobs",
+			"jobs",
+			" two-of-two",
+			"options",
+			"housing",
+			"transportation",
+			"options",
+			"node",
+			"page-node-124",
+			"page-node",
+			"h3",
+			"page-title",
+			"after",
+			"workbook",
+			"link",
+			"cursor",
+			"map",
+			"box-shadow",
+			"html.",
+			"icon",
+			"transportation",
+			"articl",
+			"what the city is doing",
+			"what the city is doign",
+			"button",
+			"opacity:1;",
+			"-webkit-transform:translateZ(0);transform:translateZ(0)",
+			"--animate",
+			"https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754/",
+			"https://s3-us-west-2.amazonaws.com/s.cdpn.io/423754",
+			"//",
+			"{",
+			"styles",
+			"},",
+			",",
+			" ]",
+			"[ ",
+			"false",
+			"intro",
+			"active",
+			"button",
+			"maps",
+			"padding",
+			"margin",
+			"#f5f5f5",
+			"text-trans",
+			";\n",
+			"content-area",
+			"just another",
+			"test page one",
+			"lorem ipsum",
+			"welcome to wordpress",
+			"hello world",
+			".css",
+			"style.css",
+			"_enqueue_style",
+			"body{",
+			"current",
+			"visual",
+			"graphic",
+			"See more",
+			"readmore-button",
+			"readmore",
+			"<button",
+			"button",
+			"js-active",
+			"branding",
+			"h1",
+			"bp(min-xs)",
+			"bp(min-lg)",
+			"bp(min-md)",
+			"bp(min-sm)",
+			"bp(min-xs)",
+			"</i>",
+			"<i class=\"plus-sign\">",
+			"@include",
+			"padding",
+			"font-size",
+			"height",
+			"43.7",
+			"(max-width",
+			"Data Export<",
+			"Data Exports",
+			"        <div>\n            <p>1 User (Limited Access)</p>\n        </div>",
+			"Participants",
+			"Administrators",
+			"No Administrators",
+			" Active",
+			"key directions",
+			"Draft policy language for each policy topic.",
+			"An overview of key directions for each major <a href=\"/policy-topics\">policy topic</a>, backed up by data and analysis and informed by community input.",
+			"A draft overview of major topics to address in the update, backed up by data and analysis, and informed by community input.",
+			"As City staff begins to add detail to the major themes identified in the Key Directions phase, we’ll be asking for your feedback on the draft policies.",
+			"A draft framework document covering policy topics and high level implementation steps for all major <a href=\"/policy-topics\">policy topics</a> covered by the plan.",
+			"Create draft City policy that is responsive to the key directions and comprehensive in scope.",
+			"During the Key Directions phase, your input will inform key directions that will be outlined through a major public outreach effort in the fall of 2016 and made available for public comment.",
+			"An overview of key directions for each major <a href=\"/policy-topics\">policy topic</a>, backed up by data and analysis and informed by community input.",
+			"Develop and refine key directions, providing the overall structure and outline for the plan.",
+			"Phase 2 Key Directions"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$color-bg",
+			"bp(xs)",
+			"bp(lg)",
+			"bp(md)",
+			"bp(sm)",
+			"bp(xs)",
+			"Draft policy language for each <a href=\"/policy-topics\">policy topic</a>.",
+			"A draft overview of major <a href=\"/policy-topics\">topics</a> to address in the update, backed up by data and analysis, and informed by community input.",
+			"In Spring and Summer 2017, staff will conduct two rounds of community workshops, dialogues, and other activities to engage in conversation and ask for your feedback on draft comprehensive plan policies.",
+			"Draft policy language for each policy topic.",
+			"Craft draft City policy that is responsive to the Big Questions and comprehensive in scope.",
+			"In October 2016, staff will conduct a series of community workshops, dialogues, and other activities to ask Big Questions about the future of the Minneapolis.",
+			"A draft overview of major topics to address in the update, backed up by data and analysis, and informed by community input.",
+			"Begin identifying major topics that need attention in this plan update.",
+			"Phase 2 Big Questions",
+			"During the Launch phase, we asked how people want to be engaged and heard big ideas for the future.",
+			"Begin identifying major topics that need attention in this plan update.",
+			"Phase 2 Big Questions",
+			"During the Launch phase, we asked how people want to be engaged and heard big ideas for the future.",
+			"jQuery",
+			".view-documents.view-display-id-page",
+			".view-display-id-page"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.csslint_result_view":
+	{
+		"height": 449.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "boilerplate.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"breakpo",
+				"assets/application/scss/base/_breakpoints.scss"
+			],
+			[
+				"variables",
+				"assets/application/scss/skin/_variables.scss"
+			],
+			[
+				"vari",
+				"assets/application/scss/skin/_variables.scss"
+			],
+			[
+				"",
+				"Kameron/_Archive/Analytics urbaninteractivestudio.com Pages 20150117-20160117.gsheet"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "minif",
+		"selected_items":
+		[
+			[
+				"minif",
+				"~/odrive/UIS/Kameron/_UIS_Minify/minify.sublime-project"
+			],
+			[
+				"color",
+				"~/Google Drive/Dev/Project Colorado Heritage/colorado heritage.sublime-project"
+			],
+			[
+				"madi",
+				"~/Google Drive/Personal/madison rtp.sublime-workspace"
+			],
+			[
+				"uis",
+				"~/Google Drive/Personal/UIS.sublime-workspace"
+			],
+			[
+				"unti",
+				"~/Google Drive/Design/Portfolio Website/untitled.sublime-workspace"
+			],
+			[
+				"",
+				"~/Dropbox/New Web Design/_sublime_projects/UIS Git Brightpages 3.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
