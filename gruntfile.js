@@ -1,5 +1,5 @@
 /*
-npm install --save-dev grunt time-grunt grunt-postcss cssnano pixrem autoprefixer grunt-sass grunt-contrib-uglify grunt-contrib-watch grunt-notify
+npm install --save-dev grunt time-grunt grunt-postcss cssnano grunt-px-to-rem autoprefixer grunt-sass grunt-contrib-uglify grunt-contrib-watch grunt-notify
 */
 module.exports = function(grunt) {
     require('time-grunt')(grunt);
@@ -7,11 +7,10 @@ module.exports = function(grunt) {
 
         // Sass
         sass: {
-            dev:{
+            dev: {
                 options: {
                     lineNumbers: false,
                     trace: true,
-                    sourcemap: 'inline'
                 },
                 files: [{
                     expand: true,
@@ -21,7 +20,7 @@ module.exports = function(grunt) {
                     ext: '.min.css'
                 }]
             },
-            build:{
+            build: {
                 options: {
                     lineNumbers: false,
                     trace: true,
@@ -37,11 +36,40 @@ module.exports = function(grunt) {
             }
         },
 
+        px_to_rem: {
+            dev: {
+                options: {
+                    base: 16,
+                    fallback: false,
+                    fallback_existing_rem: false,
+                    max_decimals:5,
+                    ignore: [],
+                    map: false
+                },
+                files: {
+                    'css/main.min.css': ['css/main.min.css']
+                }
+            },
+            build: {
+                options: {
+                    base: 16,
+                    fallback: false,
+                    fallback_existing_rem: false,
+                    max_decimals:5,
+                    ignore: [],
+                    map: false
+                },
+                files: {
+                    'css/main.min.css': ['css/main.min.css']
+                }
+            }
+        },
+
         // Post CSS
         postcss: {
             dev: {
                 options: {
-                    map:true,
+                    map: true,
                     processors: [
                         require('autoprefixer')({
                             browsers: ['last 4 versions', '> .5% in US']
@@ -58,8 +86,8 @@ module.exports = function(grunt) {
                             minifyFontValues: false,
                             normalizeUrl: false,
                             safe: true,
-                            mergeRules:true,
-                            core:false
+                            mergeRules: true,
+                            core: false
                         })
                     ]
                 },
@@ -67,7 +95,7 @@ module.exports = function(grunt) {
             },
             build: {
                 options: {
-                    map:false,
+                    map: false,
                     processors: [
                         require('autoprefixer')({
                             browsers: ['last 4 versions', '> .5% in US']
@@ -87,7 +115,7 @@ module.exports = function(grunt) {
                             minifyFontValues: false,
                             normalizeUrl: false,
                             safe: true,
-                            mergeRules:true
+                            mergeRules: true
                         })
                     ]
                 },
@@ -161,6 +189,7 @@ module.exports = function(grunt) {
 
     // Load plugins
     grunt.loadNpmTasks('grunt-sass'); //libsass
+    grunt.loadNpmTasks('grunt-px-to-rem');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -169,12 +198,14 @@ module.exports = function(grunt) {
     // Register tasks
     grunt.registerTask('default', [
         'sass:dev',
+        'px_to_rem:dev',
         'postcss:dev',
         'uglify:dev'
     ]);
 
     grunt.registerTask('build', [
         'sass:build',
+        'px_to_rem:dev',
         'postcss:build',
         'uglify:build'
     ]);
