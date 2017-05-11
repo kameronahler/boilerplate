@@ -1,5 +1,5 @@
 /*
-npm install --save-dev grunt time-grunt grunt-postcss cssnano grunt-px-to-rem autoprefixer grunt-sass grunt-contrib-uglify grunt-contrib-watch grunt-notify
+npm install --save-dev grunt time-grunt grunt-postcss cssnano grunt-px-to-rem autoprefixer css-mqpacker grunt-sass grunt-contrib-uglify grunt-contrib-watch grunt-notify
 */
 module.exports = function(grunt) {
     require('time-grunt')(grunt);
@@ -11,13 +11,14 @@ module.exports = function(grunt) {
                 options: {
                     lineNumbers: false,
                     trace: true,
+                    sourcemap: 'inline'
                 },
                 files: [{
                     expand: true,
                     cwd: 'src/scss',
                     src: ['*.scss'],
                     dest: 'css',
-                    ext: '.min.css'
+                    ext: '.css'
                 }]
             },
             build: {
@@ -31,7 +32,7 @@ module.exports = function(grunt) {
                     cwd: 'src/scss',
                     src: ['*.scss'],
                     dest: 'css',
-                    ext: '.min.css'
+                    ext: '.css'
                 }]
             }
         },
@@ -46,9 +47,13 @@ module.exports = function(grunt) {
                     ignore: [],
                     map: false
                 },
-                files: {
-                    'css/main.min.css': ['css/main.min.css']
-                }
+                files: [{
+                    expand: true,
+                    cwd: 'css',
+                    src: ['*.css'],
+                    dest: 'css',
+                    ext: '.css'
+                }]
             },
             build: {
                 options: {
@@ -59,9 +64,13 @@ module.exports = function(grunt) {
                     ignore: [],
                     map: false
                 },
-                files: {
-                    'css/main.min.css': ['css/main.min.css']
-                }
+                files: [{
+                    expand: true,
+                    cwd: 'css',
+                    src: ['*.css'],
+                    dest: 'css',
+                    ext: '.css'
+                }]
             }
         },
 
@@ -72,12 +81,13 @@ module.exports = function(grunt) {
                     map: true,
                     processors: [
                         require('autoprefixer')({
-                            browsers: ['last 4 versions', '> .5% in US']
+                            browsers: ['last 4 versions', '> .25% in US']
                         }),
                         require('cssnano')({
                             calc: false,
                             colorMin: false,
                             convertValues: false,
+                            discardComments: false,
                             discardUnused: false,
                             zindex: false,
                             reduceIdents: false,
@@ -86,22 +96,27 @@ module.exports = function(grunt) {
                             minifyFontValues: false,
                             normalizeUrl: false,
                             safe: true,
-                            mergeRules: true,
-                            core: false
+                            mergeRules:true,
+                            core:false
                         })
+                        //require('css-mqpacker')({
+                        //    expand: true,
+                        //    cwd: 'src/css/',
+                        //    src: '*.css',
+                        //    dest: 'css',
+                        //    sort:true
+                        //}),
                     ]
                 },
+
                 src: 'css/*.css'
             },
             build: {
                 options: {
-                    map: false,
+                    map:false,
                     processors: [
                         require('autoprefixer')({
-                            browsers: ['last 4 versions', '> .5% in US']
-                        }),
-                        require('pixrem')({
-                            rootValue: '16px'
+                            browsers: ['last 4 versions', '> .25% in US']
                         }),
                         require('cssnano')({
                             calc: false,
@@ -117,6 +132,13 @@ module.exports = function(grunt) {
                             safe: true,
                             mergeRules: true
                         })
+                        //require('css-mqpacker')({
+                        //    expand: true,
+                        //    cwd: 'src/css/',
+                        //    src: '*.css',
+                        //    dest: 'css',
+                        //    sort:true
+                        //}),
                     ]
                 },
                 src: 'css/*.css'
@@ -132,7 +154,7 @@ module.exports = function(grunt) {
                     preserveComments: 'all'
                 },
                 src: 'src/js/*.js',
-                dest: 'js/main.min.js',
+                dest: 'js/main.js',
                 sourceMap: true,
                 sourceMapIncludeSources: true
             },
@@ -162,7 +184,7 @@ module.exports = function(grunt) {
         watch: {
             styles: {
                 files: 'src/scss/**/*.scss',
-                tasks: ['sass:dev', 'postcss:dev', 'notify:sass'],
+                tasks: ['sass:dev', 'px_to_rem:dev', 'postcss:dev', 'notify:sass'],
                 options: {
                     livereload: true
                 }
