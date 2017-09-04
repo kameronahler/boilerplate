@@ -2,19 +2,20 @@
 * HTML
 
 ## Javascript - CDN with local fallbacks where available
-* Modernizr (including HTML5shiv)
-* jQuery
-* Respond.js for old IE
-* plugins.js for local dev
 * main.js for local dev
-* Google analytics ready
 
 ## SCSS
-* Normalize
-* H5BP Resets (not including helpers)
-* Custom vertical rhythm
-* H5BP Print
-* main.scss
+* main.scss w/ _print.scss partial
+
+## Gulp (default and build tasks)
+* gulpfile.js
+  * sass
+  * postcss
+   * cssnano
+   * pixtorem
+   * autoprefixer
+  * uglify
+  * concat
 
 ## Grunt (default and build tasks)
 * gruntfile.js 
