@@ -1,3 +1,5 @@
+// npm install --save-dev gulp,gulp-sass,gulp-postcss,autoprefixer,postcss-pxtorem,cssnano,gulp-uglify,gulp-concat,browser-sync
+
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     postcss = require('gulp-postcss'),
@@ -6,35 +8,34 @@ var gulp = require('gulp'),
     postcsscssnano = require('cssnano'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
-    browserSync = require('browser-sync'),
-    gutil = require('gulp-util');
+    browserSync = require('browser-sync')
 
 gulp.task('sass', function() {
-	var plugins = [
-		postcssautoprefixer({
-				browsers: ['last 4 versions', '> .25% in US']
-			}),
-		postcsspxtorem({
-			rootValue:16,
-			unitPrecision:5,
-			propList:['*'],
-			replace:false
-			}),
-		postcsscssnano({
-			calc: false,
-			colorMin: false,
-			convertValues: false,
-			discardUnused: false,
-			zindex: false,
-			reduceIdents: false,
-			mergeIdents: false,
-			minifySelectors: false,
-			minifyFontValues: false,
-			normalizeUrl: false,
-			safe: true,
-			mergeRules: true
-			})
-	];
+    var plugins = [
+        postcssautoprefixer({
+                browsers: ['last 4 versions', '> .25% in US']
+            }),
+        postcsspxtorem({
+            rootValue:16,
+            unitPrecision:5,
+            propList:['*'],
+            replace:false
+            }),
+        postcsscssnano({
+            calc: false,
+            colorMin: false,
+            convertValues: false,
+            discardUnused: false,
+            zindex: false,
+            reduceIdents: false,
+            mergeIdents: false,
+            minifySelectors: false,
+            minifyFontValues: false,
+            normalizeUrl: false,
+            safe: true,
+            mergeRules: true
+            })
+    ];
 
     return gulp.src('src/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
