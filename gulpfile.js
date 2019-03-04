@@ -1,4 +1,4 @@
-// npm install --save-dev gulp,gulp-sass,gulp-postcss,autoprefixer,postcss-pxtorem,cssnano,gulp-uglify,gulp-concat,browser-sync
+// npm install --save-dev gulp gulp-sass gulp-postcss autoprefixer postcss-pxtorem cssnano gulp-uglify gulp-concat browser-sync
 
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     postcsscssnano = require('cssnano'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
-    browserSync = require('browser-sync')
+    browserSync = require('browser-sync');
 
 gulp.task('sass', function() {
     var plugins = [
@@ -47,7 +47,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('js', function() {
-    return gulp.src(['src/js/test.js','src/js/**/*.js'])
+    return gulp.src(['src/js/**/*.js'])
         .pipe(concat('main.js'))
         .pipe(uglify())
         .pipe(gulp.dest('js'))
